@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/row_status"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/check"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/row_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/row_status"
+        android:layout_alignTop="@+id/row_status"
+        android:textStyle="bold"
+        tools:text="Label"
+        />
+
+    <TextView
+        android:id="@+id/row_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/row_label"
+        android:layout_below="@+id/row_label"
+        tools:text="Deadline"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_priority"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_below="@+id/row_deadline"
+        android:layout_alignStart="@+id/row_deadline"
+        android:numStars="3"
+        android:rating="2"
+        android:stepSize="1" />
+
+</RelativeLayout>

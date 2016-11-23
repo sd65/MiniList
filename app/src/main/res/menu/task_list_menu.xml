@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Order"
+        app:showAsAction="always"
+        android:icon="@drawable/order_icon"
+        android:checkable="false" >
+        <menu >
+            <item android:title="Label"
+                android:id="@+id/sort_label" />
+            <item android:title="Priority"
+                android:id="@+id/sort_priority" />
+            <item
+                android:title="Deadline"
+                android:id="@+id/sort_deadline" />
+        </menu>
+    </item>
+
+</menu>

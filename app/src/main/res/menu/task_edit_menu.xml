@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Delete Task"
+        android:id="@+id/delete"
+        app:showAsAction="always"
+        android:icon="@drawable/delete"
+        android:visible="true"
+        android:enabled="true" />
+    <item android:title="Clear fields"
+        android:id="@+id/reset"
+        app:showAsAction="always"
+        android:icon="@drawable/clear"
+        android:visible="true"
+        android:enabled="true" />
+    <item android:title="Cancel"
+        android:id="@+id/cancel" />
+</menu>
